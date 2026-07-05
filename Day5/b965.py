@@ -5,10 +5,19 @@ k = [int(i) for i in input().split()]
 k.reverse()
 for i in k:
     if i == 0: #rotate
-        ___
+        #轉置
+        BT = []
+        for i in range(len(B[0])):
+            col = []
+            for j in range(len(B)):
+                col.append(B[j][i])
+            BT.append(col)
+        B = BT
+        #翻轉
+        B.reverse()
     else: #flip
-        ___
+        B.reverse()
 
-print(___,___)
+print(len(B),len(B[0]))
 for row in B:
     print(*row)
